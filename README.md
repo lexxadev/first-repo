@@ -23,9 +23,9 @@ int main() {
     int a = value;
     int b = value;
 
-    int hasil;
+    int result;
 
-    hasil = (a + b) * a
+    result = (a + b) * a
     cout << hasil << endl;
 
     cin.get();
