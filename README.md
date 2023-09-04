@@ -1,4 +1,4 @@
-1. Penjelasan simbol Aritmatika
+I. Penjelasan simbol Aritmatika
 
     1. " + " = Digunakan untuk melakukan operasi perhitungan penjumlahan.
 
