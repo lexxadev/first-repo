@@ -42,7 +42,7 @@ int main () {
         break;
 
         case '%':
-        result = result = static_cast<int>(x) % static_cast<int>(y); // Gunakan " % " untuk menggunakna operasi modulus
+        result = result = static_cast<int>(x) % static_cast<int>(y); // Gunakan " % " untuk menggunakan operasi modulus
         cout << x << " % " <<  y  << " = " << result << endl; 
         break;
 
