@@ -2,24 +2,56 @@
 
 using namespace std;
 
-int main()
-{
-    int a; // Ubah salah satu sintaks 'int' menjadi 'float' untuk melakukan pembagian.
-    int b;
 
-    int result; // Ubah sintaks 'int' menjadi 'float' untuk melakukan pembagian, ubah kembali jika ingin menggunakan operasi perhitungan lain.
+int main () {
+
+    float x, y, result;
+    char mathSymbol;
+
+    cout << "===============================" << endl;
+
+    cout << "Masukan angka : "; // Masukan angka yang diinginkan 
+    cin >> x;
+
+    cout << "Pilih operasi perhitungan : "; // Pilih salah satu operasi perhitungan seperti "+, -, *, /, %"
+    cin >> mathSymbol;
+
+    cout << "Masukan angka sekali lagi : ";
+    cin >> y;
+
+    switch (mathSymbol) {
+
+        case '+': 
+        result = (x + y);
+        cout << x << " + " <<  y  << " = " << result << endl; 
+        break; 
+
+        case '-':
+        result = (x - y);
+        cout << x << " - " <<  y  << " = " << result << endl; 
+        break;
+
+        case '*':
+        result = (x * y);
+        cout << x << " x " <<  y  << " = " << result << endl; // Gunakan " * " untuk menggunakan operasi perkalian
+        break; 
+
+        case '/':
+        result = (x / y);
+        cout << x << " : " <<  y  << " = " << result << endl; // gunakan " / " untuk menggunakan operasi pembagian
+        break;
+
+        case '%':
+        result = result = static_cast<int>(x) % static_cast<int>(y); // Gunakan " % " untuk menggunakna operasi modulus
+        cout << x << " % " <<  y  << " = " << result << endl; 
+        break;
+
+        default :
+        cout << "Operasi perhitungan tidak valid!" << endl;
     
-    cout << "Input nilai : ";
-    cin >> a;
+    }
 
-    cout << "Input nilai sekali lagi : ";
-    cin >> b; 
+    cout << "=================================" << endl;
 
-    result = a + b; // Gunakan simbol aritmatika seperti "+" , "-" , "/" , "*" , "%" untuk menjalankan program. Penjelasan lebih lengkap mengenai simbol dapat dilihat di file 'readme.md'. 
-
-    cout << "hasil dari perhitungan tersebut adalah : " << result << endl;
-
-    cin.get();
     return 0;
 }
-
