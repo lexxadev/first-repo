@@ -4,7 +4,7 @@ using namespace std;
 
 
 int main () {
-
+    
     float x, y, result;
     char mathSymbol;
 
